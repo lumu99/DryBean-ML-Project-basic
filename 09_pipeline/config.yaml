@@ -1,0 +1,19 @@
+data:
+  raw_dir: "01_data/raw"
+  processed_dir: "01_data/processed"
+  train_file: "train.csv"
+  test_file: "test.csv"
+  full_file: "Dry_Bean_Dataset.csv"
+  target_column: "Class"
+  test_size: 0.2
+  random_state: 42
+
+results:
+  result_dir: "08_results"
+  figure_dir: "08_results/figures"
+
+models:
+  basic_models:
+    - knn
+    - svm
+    - random_forest

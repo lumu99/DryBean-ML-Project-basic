@@ -1,0 +1,12 @@
+﻿feature_1,feature_2,correlation,abs_correlation
+Area,ConvexArea,0.99994,0.99994
+Compactness,ShapeFactor3,0.987549,0.987549
+ConvexArea,EquivDiameter,0.985197,0.985197
+Area,EquivDiameter,0.984934,0.984934
+Eccentricity,ShapeFactor3,-0.981436,0.981436
+AspectRation,ShapeFactor3,-0.978703,0.978703
+AspectRation,Compactness,-0.976914,0.976914
+Perimeter,EquivDiameter,0.967813,0.967813
+Eccentricity,Compactness,-0.960075,0.960075
+Area,MinorAxisLength,0.951749,0.951749
+MinorAxisLength,ConvexArea,0.951502,0.951502

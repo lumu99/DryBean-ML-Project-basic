@@ -1,0 +1,28 @@
+DryBean-ML-Project-basic
+第 3 步：特征工程分析摘要
+
+一、输入数据
+训练集：D:\my_project\DryBean-ML-Project-basic\01_data\processed\train_processed.csv
+验证集：D:\my_project\DryBean-ML-Project-basic\01_data\processed\val_processed.csv
+测试集：D:\my_project\DryBean-ML-Project-basic\01_data\processed\test_processed.csv
+
+二、特征数量
+当前特征数量：16
+特征名称：
+['Area', 'Perimeter', 'MajorAxisLength', 'MinorAxisLength', 'AspectRation', 'Eccentricity', 'ConvexArea', 'EquivDiameter', 'Extent', 'Solidity', 'roundness', 'Compactness', 'ShapeFactor1', 'ShapeFactor2', 'ShapeFactor3', 'ShapeFactor4']
+
+三、特征工程处理内容
+1. 基于训练集统计各特征的均值、标准差、最小值、最大值。
+2. 基于训练集计算特征相关性矩阵。
+3. 使用相关系数绝对值 >= 0.95 作为阈值，识别高度相关特征对。
+4. 本基础阶段暂不删除特征，避免影响后续基础模型训练的完整性。
+5. 高相关特征对会在论文中作为“特征冗余分析”的依据。
+
+四、高度相关特征对数量
+高度相关特征对数量：11
+
+五、输出文件
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\feature_statistics.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\feature_correlation_matrix.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\high_correlation_features.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\feature_engineering_summary.txt

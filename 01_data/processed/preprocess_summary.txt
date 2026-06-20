@@ -1,0 +1,41 @@
+DryBean-ML-Project-basic
+第 2 步：数据预处理摘要
+
+一、原始数据形状
+训练集：(9527, 17)
+验证集：(1347, 17)
+测试集：(2737, 17)
+
+二、原始缺失值数量
+训练集：741
+验证集：103
+测试集：221
+
+三、重复行处理
+训练集原始重复行数量：21
+训练集删除重复行后形状：(9503, 17)
+
+四、标签清洗说明
+原始训练集标签分布：
+{'DERMASON': 2365, 'SIRA': 1781, 'SEKER': 1343, 'HOROZ': 1270, 'CALI': 1120, 'BARBUNYA': 898, 'BOMBAY': 344, 'dermason': 61, 'D3RMAS0N': 56, 'sira': 37, 'horoz': 32, 'seker': 28, 'S3K3R': 24, 'H0R0Z': 24, 'DERMASON ': 21, 'SIRA ': 19, 'barbunya': 18, 'cali': 16, 'CALI ': 15, 'HOROZ ': 14, 'SEKER ': 13, 'B0MBAY': 12, 'BARBUNYA ': 11, 'bombay': 4, 'BOMBAY ': 1}
+
+清洗后标签映射：
+{0: 'BARBUNYA', 1: 'BOMBAY', 2: 'CALI', 3: 'DERMASON', 4: 'HOROZ', 5: 'SEKER', 6: 'SIRA'}
+
+五、缺失值处理方法
+使用训练集每个特征的中位数填补 train / val / test 中的缺失值。
+
+六、标准化方法
+使用 StandardScaler。
+只在训练集上 fit，在验证集和测试集上 transform，避免数据泄漏。
+
+七、最终缺失值数量
+训练集：0
+验证集：0
+测试集：0
+
+八、输出文件
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\train_processed.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\val_processed.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\test_processed.csv
+D:\my_project\DryBean-ML-Project-basic\01_data\processed\label_mapping.json
