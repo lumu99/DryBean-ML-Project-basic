@@ -477,7 +477,7 @@ def create_model():
 
 如果本项目对你有帮助，欢迎 ⭐ Star 支持项目，也欢迎提交 🐛 Issue 提出问题或建议：
 
-- ⭐ Star 项目： https://github.com/lumu99/DryBean-ML-Project-basic
-- 🐛 提交 Issue： https://github.com/lumu99/DryBean-ML-Project-basic/issues
+- ⭐ Star 项目：[点击 Star](https://github.com/lumu99/DryBean-ML-Project-basic)
+- 🐛 提交 Issue：[点击反馈 Issue](https://github.com/lumu99/DryBean-ML-Project-basic/issues)
 
 [⬆ 返回顶部](#top)
