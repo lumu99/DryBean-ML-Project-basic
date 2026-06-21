@@ -93,18 +93,6 @@
 
 系统从原始数据读取开始，依次完成数据清洗、特征工程、多模型训练、模型测试、鲁棒性实验和结果可视化。最终结果以 CSV 文件和 PNG 图表形式保存，便于论文写作、结果复现和 GitHub 展示。
 
-```mermaid
-flowchart LR
-    A[Raw Data] --> B[Data Loader]
-    B --> C[Preprocess]
-    C --> D[Feature Engineering]
-    D --> E[Model Training]
-    E --> F[Model Evaluation]
-    F --> G[Robustness Test]
-    F --> H[Visualization]
-    G --> H
-    H --> I[CSV + PNG Results]
-```
 
 [⬆ 返回目录](#table-of-contents)
 
